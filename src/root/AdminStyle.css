@@ -1,0 +1,63 @@
+.InContraseña {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(124, 122, 122);
+    position:absolute;
+
+    margin-left: 5%;
+    margin-right:5%;
+    top:20%;
+    height:10%;
+    width:90%;
+    border-color: rgb(124, 122, 122);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(95, 95, 95);
+}
+.botonor {
+    width: 40%;
+    color: white;
+    position:absolute;
+    background-color: rgb(148, 204, 63);
+    box-shadow: 10px 10px 10px rgb(195, 240, 128);
+    top:35%;
+    height: 10%;
+    margin-left: 30%;
+    font-size: 30px;
+
+}
+.botonor2 {
+    text-decoration: none;
+    width: 40%;
+    color: white;
+    position:absolute;
+    background-color: rgb(20, 158, 212);
+    box-shadow: 10px 10px 10px rgb(160, 214, 228);
+    top:50%;
+    height: 10%;
+    margin-left: 30%;
+    font-size: 30px; 
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.comprobacion {
+    color: rgb(116, 184, 14);
+    position: absolute;
+    margin-left: 35%;
+    top:0%;
+    font-size: 40px;
+    width:50%;
+}
+.botonor3 {
+    text-decoration: none;
+    width: 40%;
+    color: white;
+    position:absolute;
+    background-color: red;
+    box-shadow: 10px 10px 10px rgb(223, 86, 86);
+    top:65%;
+    height: 10%;
+    margin-left: 30%;
+    font-size: 30px; 
+}

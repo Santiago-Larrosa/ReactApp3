@@ -1,0 +1,177 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(99, 89, 89, 0.87);
+    background-color: #dfdede;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dfdede;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+.titulos {
+    font-size:180px;
+    color: aqua;
+    opacity: 25%;
+}
+.Create {
+   font-size:50px;
+   color: aquamarine;
+   position:absolute;
+   left:900px;
+   top:400px;
+}
+.subtitulo {
+    font-size: 50px;
+    color:blue;
+    position:absolute;
+    opacity: 25%;
+   left:295px;
+   top:350px;
+}
+.subtitulo1 {
+    font-size: 50px;
+    color:blue;
+    opacity: 50%;
+    position:absolute;
+   left:290px;
+   top:350px;
+}
+.subtitulo2 {
+    font-size: 100px;
+    color:blue;
+    opacity:100%;
+    position:absolute;
+   left:285px;
+   top:350px;
+}
+.TituloPost {
+    font-size:120px;
+}
+.Post {
+    
+    
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px grey;
+    text-align: center;
+    border: 1px solid #ccc;
+    width:100%; 
+    margin-bottom: 30px;
+    margin-left:-10px;
+    
+  
+    
+}
+.Boton {
+    border-radius:10px;
+    text-align: center;
+    width:150px;
+    height: 50px;
+    display: flex;
+    margin: 30px;
+    box-shadow: 5px 5px 5px rgb(158, 158, 158);
+    background-color: #ccc;
+    color: antiquewhite;
+    text-decoration: none;
+
+}
+.Head {
+    background-color: #545e68;
+    top:0px;
+    position: absolute;
+    height: 110px;
+    width: 100%;
+    box-shadow: 10px 10px 10px grey;
+}
+.imagen {
+    width:100px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.AlgunTitulo {
+    
+    color:white;
+}
+.imagen2 {
+    width: 100px;
+    position: absolute;
+    right: 50px;
+}
+.UnaCosa{
+    height: 100px;
+    width: 100%;
+}
+
+.sidebar {
+    width: 100%;
+        position: absolute;
+}
+.EsteDiv {
+    width: 100%;
+}
+.Borrar {
+    border-radius:10px;
+    text-align: center;
+    width:150px;
+    height: 50px;
+    display: flex;
+    margin: 30px;
+    box-shadow: 5px 5px 5px red;
+    background-color:red;   
+    color: antiquewhite;
+    text-decoration: none;
+}
+.Reloj {
+    position: fixed;
+    right: 50px;
+    top:50px;
+    bottom:50px;
+    height: 600px;
+    width: 300px;
+    background-color: #c9c8c8;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+    text-align: center;
+    color: rgb(83, 82, 82);
+    width:30%;
+    min-width:200px;
+}
+.Cruz {
+    width:20px;
+    height:20px;
+    position: absolute;
+    left: 10px;
+    margin:10px;
+}
+.algo {
+    font-size: 40px;
+}
+
+.admin {
+    font: size 60px;
+    color: red;
+    
+}
+.linkardo{
+    color:white;
+    font-size: large;
+    margin: auto;
+}
+.Activado{
+box-shadow: 10px 10px 10px red;
+    text-aling:center;
+}

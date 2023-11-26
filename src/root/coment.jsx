@@ -17,20 +17,12 @@ export default function Coment() {
   const [contadorID, setContadorID] = useState(1);
   const [admin, setAdmin] = useState(false);
   const [showButton, setShowButton] = useState(false);
- useEffect(() => {
+
+  useEffect(() => {
     const DownAdmin = localStorage.getItem("admin");
     setAdmin(JSON.parse(DownAdmin));
-
-    if (admin) {
-      setShowButton(admin);
-    } else {
-      setShowButton(admin);
-    }
-
-    
+    setShowButton(admin);
   }, [admin]);
-
-
 
   if (isNaN(idNumero)) {
     console.error("ID proporcionado no es un número válido:", id);
@@ -40,12 +32,9 @@ export default function Coment() {
     const comentariosJson = localStorage.getItem("comentarios");
     if (comentariosJson) {
       const comentariosArray = JSON.parse(comentariosJson);
-      console.log(comentariosArray);
       setComentarios(comentariosArray);
-      console.log(comentariosArray.find(c => c.id === parseInt(id)));
       setComentarioSeleccionado(comentariosArray.find(c => c.id === parseInt(id)));
     }
-   
   }, []);
 
   useEffect(() => {
@@ -76,7 +65,6 @@ export default function Coment() {
   };
 
   const handleBorrarComentario = (comentarioId) => {
-   
     const comentariosActualizados = comentariosDelComentario.filter((comentario) => comentario.id !== comentarioId);
     setComentariosDelComentario(comentariosActualizados);
 
@@ -93,10 +81,15 @@ export default function Coment() {
         {comentarioSeleccionado ? (
           <div className="ElSuperDiv">
             <div className="PostComent">
-             
-                <b className="negro"> {comentarioSeleccionado.nombre}</b><br />
-                <Markdown remarkPlugins={[remarkGfm]}>{comentarioSeleccionado.mensaje}</Markdown> {/*<br />{comentarioSeleccionado.mensaje}*/}
-             
+              <b className="negro"> {comentarioSeleccionado.nombre}</b><br />
+              <Markdown remarkPlugins={[remarkGfm]}>{comentarioSeleccionado.mensaje}</Markdown>
+              {comentarioSeleccionado.archivo && (
+                <img
+                  src={comentarioSeleccionado.archivo.dataURL}
+                  alt={comentarioSeleccionado.archivo.name}
+                  style={{ maxWidth: '100px', maxHeight: '100px' }}
+                />
+              )}
             </div>
 
             <form onSubmit={handleAgregarComentario}>
